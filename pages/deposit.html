@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alke Wallet - Depósito</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="box">
+        <h1>Depósitos</h1>
+        <p>Agrega fondos a tu cuenta</p>
+    </header>
+
+    <main class="box">
+        <form action="menu.html">
+            <label for="amount">Cantidad a depositar</label>
+            <input id="amount" type="number" placeholder="Ingrese la cantidad" required>
+
+            <label for="method">Método de depósito</label>
+            <select id="method" required>
+                <option value="" disabled selected>Seleccione un método</option>
+                <option value="creditcard">Tarjeta de Crédito</option>
+                <option value="banktransfer">Transferencia Bancaria</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button class="btn" type="submit">Depositar</button>
+        </form>
+
+        <a class="btn" href="menu.html">Volver al Menú</a>
+    </main>
+
+    <footer class="box">
+        <small>© 2026 Alke Wallet. Todos los derechos reservados.</small>
+    </footer>
+    
+</body>
+</html>
